@@ -1,0 +1,143 @@
+/* 
+=====================
+Navbar area
+=====================
+*/
+
+@media (min-width: 992px) {
+    .bar-icon,
+    .times-icon,
+    .icons {
+        display: none;
+    }
+
+    .main-menu li a:hover {
+        background-color: rgb(0 0 0);
+        color: rgb(244 244 244);
+        border-radius: 6px;
+        box-shadow: rgb(20 20 20) 2px 2px 5px 0px;
+    }
+}
+@media (max-width: 992px) {
+    .bar-icon {
+        font-size: 23px;
+        margin-right: 20px;
+    }
+    .main-menu {
+        position: absolute;
+        left: 0;
+        top: 65px;
+        height: 100vh;
+        background-color: #d3e2e3;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+        display: none;
+    }
+    .main-menu li a:hover {
+        transform: scale(1.2);
+    }
+    .times-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 23px;
+    }
+    .icons {
+        margin-top: 40px;
+        animation-name: icons-play;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    @keyframes icons-play {
+        0% {
+            left: 0;
+            right: 0;
+        }
+        50% {
+            left: 10px;
+            right: -200px;
+            transform: scale(1.2);
+        }
+        100% {
+            left: 0;
+            right: 0;
+        }
+    }
+    .icons i {
+        font-size: 21px;
+        transition: all 1s ease-in-out;
+        margin: 0px 20px;
+        color: #000;
+    }
+    .icons i:hover {
+        transform: rotate(360deg);
+    }
+    .nav-text {
+        position: absolute;
+        left: 125px;
+        top: 40px;
+    }
+    .header-content h1 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .header-content a {
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 600px) {
+    .nav-text {
+        position: absolute;
+        left: 182px;
+        top: 40px;
+    }
+    .icons i {
+        font-size: 16px;
+        margin: 0px 10px;
+    }
+    .header-content h1 {
+        margin-bottom: 30px;
+    }
+    .top-content h2 {
+        font-size: 34px;
+    }
+    .skills-icon i {
+        padding: 7px;
+        font-size: 18px;
+    }
+    .skills-text h5 {
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    #recent-area .top-content h2 {
+        font-size: 15px;
+    }
+    .recent-btn .common-btn {
+        padding: 7px 17px;
+        margin-top: 20px;
+    }
+    .client-comment {
+        margin-bottom: 30px;
+    }
+    .contact-content h2 {
+        padding: 30px 0px;
+    }
+    .contact-form input {
+        width: 250px;
+        text-indent: 10px;
+    }
+    .contact-form a {
+        left: 25%;
+        top: 100%;
+        margin-top: 20px;
+    }
+}
